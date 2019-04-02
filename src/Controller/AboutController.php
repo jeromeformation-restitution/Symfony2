@@ -1,10 +1,11 @@
 <?php
 namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AboutController
+class AboutController extends AbstractController
 {
     /**
      * @Route("/about")
@@ -12,6 +13,6 @@ class AboutController
      */
     public function about()
     {
-        return new Response('<h1>Bonjour About</h1>');
+        return $this->render('about.html.twig');
     }
 }
