@@ -1,6 +1,8 @@
 {% extends 'base.html.twig' %}
 {% block body %}
 <h1>HomePage</h1>
+    <a href="{{ path('app_home_ajout') }}">Total clics</a>
+    <p>{{ app.session.get("compteur") }}</p>
 {% endblock %}
 
 {% block title %}

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form action="{{ path('app_form_traitementform') }}" method="post">
+    <input type="text" name="firstname">
+        <input type="submit">
+        
+    </form>
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}
+
